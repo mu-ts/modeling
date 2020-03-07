@@ -11,6 +11,8 @@ export * from './decorators/tag';
 
 export * from './model/Decorations';
 
+export * from 'aws-lambda';
+
 /**
  *
  * @param type to return the decorations for.
