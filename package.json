@@ -29,7 +29,6 @@
   },
   "homepage": "https://github.com/mu-ts/modeling#readme",
   "dependencies": {
-    "@mu-ts/configurations": "^2.0.3",
     "@mu-ts/logger": "^3.0.6",
     "aws-lambda": "^1.0.5"
   },
