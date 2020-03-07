@@ -9,7 +9,7 @@ These attributes are all attribute descriptions for model classes, that provide 
 import { generated } from '@mu-ts/modeling';
 
 class User {
-  @generated('v4')
+  @generated('uuid.v4')
   id: string;
 }
 
@@ -33,8 +33,8 @@ import { Context } from '@mu-ts/modeling';
 
 | Decorator | Description |
 | --------- | ----------- |
-| `@generated(IDGenerator?)` | If, during serialization, this value is undefined or null it will be generated using the algorithm described or, by executing the funciton provided. The function will recieve the object as the first argument, and a uuid v4 as the second. |
-| `@encode('hex' | 'base64'?)` | The value will be encoded at the time of serialization, with the algorithm defined. |
+| `@generated('uuid.v4' \| IDGenerator?)` | If, during serialization, this value is undefined or null it will be generated using the algorithm described or, by executing the funciton provided. The function will recieve the object as the first argument, and a uuid v4 as the second. |
+| `@encode('hex' \| 'base64'?)` | The value will be encoded at the time of serialization, with the algorithm defined. |
 | `@encyrpt(Buffer)` | The value will be encrypted during serialization, using the secret key provided. |
 | `@redact(RedactUnless?)` | Do not serialize this value. If a `RedactUnless` function is provided, it will be executed at the time of serialization, and not serialize if it returns true. |
 | `@metadata(string?)` | This value should be persisted as metadata, using the name of the attribute as the key, or the first string if provided. |
