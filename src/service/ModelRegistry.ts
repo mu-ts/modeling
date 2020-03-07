@@ -8,7 +8,7 @@ export class ModelRegistry {
   private registry: { [key: string]: Decorations } = {};
 
   public constructor() {
-    this.logger = LoggerService.named({ name: this.constructor.name, adornments: { '@mu-ts': 's3' } });
+    this.logger = LoggerService.named({ name: this.constructor.name, adornments: { '@mu-ts': 'modeling' } });
     this.logger.debug('init()');
   }
 
