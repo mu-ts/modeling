@@ -23,7 +23,13 @@
     "type": "git",
     "url": "git+https://github.com/mu-ts/modeling.git"
   },
-  "license": "ISC",
+  
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/jeremyosborne/packagejsonexample/blob/master/LICENSE.txt"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/mu-ts/modeling/issues"
   },
